@@ -64,6 +64,9 @@ Using basic Python syntax, you can continue to parse and examine the data.  We u
 **Presentation**	DAVID
 
 ==========
+
+[Final Projects & Presentations](https://github.com/stat157/questionnaire/wiki/How-To-Submit-Your-Homework)
+
 ==========
 
 Objective
