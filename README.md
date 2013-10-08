@@ -56,7 +56,7 @@ In opening our virtual machine, we have run the commands `git clone http://githu
 
 Now, we need to make sure that when we open our iPython Notebook, we are in the correct directory.  To make sure of this, go through your basic UNIX commands to move around until in the right directory.  In our case, the necessary commands were `ls` to understand where we are in our machines, and `cd homework-02/` to move into the correct folders within our machines.
 
-To open the iPython Notebook, run `ipython notebook --ip=0.0.0.0 --no-browser` and open _127.0.0.1:7777_ in a browser.  Here you should see within the `homework-02` repository all necessary and up to date files from GitHub.
+To open the iPython Notebook, run `ipython notebook --ip=0.0.0.0 --no-browser --pylab=inline` and open _127.0.0.1:7777_ in a browser.  Here you should see within the `homework-02` repository all necessary and up to date files from GitHub.
 Using basic Python syntax, you can continue to parse and examine the data.  We used a basic **for loop** to run through all of the data and determine sums, lengths, and averages of each of the four VARK scores, and prevelance of the student responses.  Building this into a dictionary made it much more consise.
 
 **Visualization**	ASHLEY
