@@ -69,15 +69,15 @@ In your local OS, open your browser of choice and open your iPython notebook by 
     
 **Curation**
 
-Run all the cells specified in the "Curation" section, producing the curated data. At a top-level view, it is the data of all subjects who submitted well-behaved responses (they gave exactly four proper VARK scores for their learning styles). On a low level view, it is a list of Python dictionaries, each of which has four role ("Administrator", "Entrepreneur", "Integrator", "Producer") corresponding to the person's degree of affinity ("Not Often", "Sometimes", "Often", "Always"). There are also four learning styles ("Visual", "Aural", "Read/Write", "Kinesthetic") corresponding to their VARK scores (positive integers from 0 to 14).
+Run all the cells up through the line `"allSubjectsData = getAllSubjectsData()"`, producing the curated data. At a top-level view, it is the data of all subjects who submitted well-behaved responses (they gave exactly four proper VARK scores for their learning styles). On a low level view, it is a list of Python dictionaries, each of which has four role ("Administrator", "Entrepreneur", "Integrator", "Producer") corresponding to the person's degree of affinity ("Not Often", "Sometimes", "Often", "Always"). There are also four learning styles ("Visual", "Aural", "Read/Write", "Kinesthetic") corresponding to their VARK scores (positive integers from 0 to 14).
 
 **Analysis**
 
-Run all the cells specified in the "Analysis" section, producing the analyzed data. At a top-level view, it shows the average learning style affinity score for all subjects who identified with different roles to different degrees. At a low level, it is a three-level dictionary. The top level is a dictionary with role keys and dictionary values. These dictionaries have learning style keys and dictionary values. These dictionaries have affinity degree keys and average learning score as the value.
+Run all the cells after `"allSubjectsData = getAllSubjectsData()"` and before `import matplotlib.pyplot as plt`, producing the analyzed data. At a top-level view, it shows the average learning style affinity score for all subjects who identified with different roles to different degrees. At a low level, it is a three-level dictionary. The top level is a dictionary with role keys and dictionary values. These dictionaries have learning style keys and dictionary values. These dictionaries have affinity degree keys and average learning score as the value.
  
 **Visualization**
 
-Run all cells specified in the "Visualization" section (i.e. all remaining cells). The graphs allows you to see how people of different affinities to different roles learn differently.
+Run all cells starting and after `import matplotlib.pyplot as plt` (i.e. all remaining cells). The graphs allows you to see how people of different affinities to different roles learn differently.
 
 **Presentation**
 
