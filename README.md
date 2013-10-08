@@ -74,6 +74,7 @@ In analyzing the data, we are developing the average learning style affinity sco
  
 Producing graphs allows us to understand how visuals representation emphasize and improve our understanding of different affinities of playing different roles help individual learn differently.
 
+[Our Final Project](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data.ipynb)
 ==========
 
 [Final Projects & Presentations](https://github.com/stat157/questionnaire/wiki/How-To-Submit-Your-Homework)
