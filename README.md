@@ -71,7 +71,7 @@ Run all the cells specified in the "Curation" section, producing the curated dat
 **Analysis**
 Run all the cells specified in the "Analysis" section, producing the analyzed data. At a top-level view, it shows the average learning style affinity score for all subjects who identified with different roles to different degrees. At a low level, it is a three-level dictionary. The top level is a dictionary with role keys and dictionary values. These dictionaries have learning style keys and dictionary values. These dictionaries have affinity degree keys and average learning score as the value.
 
-**Visualization**	ASHLEY
+**Visualization**
 Run all cells specified in the "Visualization" section (i.e. all remaining cells). The graphs allows you to see how people of different affinities to different roles learn differently.
 
 ==========
