@@ -67,19 +67,12 @@ Navigate through your VM to find the directory containing this repository (**hom
 
 In your local OS, open your browser of choice and open your iPython notebook by going to (by default) _127.0.0.1:7777_
     
-**Curation**
+To produce the set of data, we can curate the data by reading the Google Spreadsheet, and presenting all of the subjects who submitted well-behaved responses (they gave exactly four propoer VARK scores for their learning styles).  Within a Python Dictionary, each of our four roles corresponding to  the person's degree of affinity.  With the four learning styles corresponding to their VARK scores (positive integers from 0 to 14), we've understood quantitatively what we are trying to represent.
 
-Run all the cells up through the line `"allSubjectsData = getAllSubjectsData()"`, producing the curated data. At a top-level view, it is the data of all subjects who submitted well-behaved responses (they gave exactly four proper VARK scores for their learning styles). On a low level view, it is a list of Python dictionaries, each of which has four role ("Administrator", "Entrepreneur", "Integrator", "Producer") corresponding to the person's degree of affinity ("Not Often", "Sometimes", "Often", "Always"). There are also four learning styles ("Visual", "Aural", "Read/Write", "Kinesthetic") corresponding to their VARK scores (positive integers from 0 to 14).
 
-**Analysis**
-
-Run all the cells after `"allSubjectsData = getAllSubjectsData()"` and before `import matplotlib.pyplot as plt`, producing the analyzed data. At a top-level view, it shows the average learning style affinity score for all subjects who identified with different roles to different degrees. At a low level, it is a three-level dictionary. The top level is a dictionary with role keys and dictionary values. These dictionaries have learning style keys and dictionary values. These dictionaries have affinity degree keys and average learning score as the value.
+In analyzing the data, we are developing the average learning style affinity scores for all subjects who identified with different roles at varying degrees. Within the three-level dictionary, we are looking at the role keys and dictionary values.  These dictionaries have learning style keys and dictionary values. Each dictionary represents the affinity degree keys and average learning scores are as the value.
  
-**Visualization**
-
-Run all cells starting and after `import matplotlib.pyplot as plt` (i.e. all remaining cells). The graphs allows you to see how people of different affinities to different roles learn differently.
-
-**Presentation**
+Producing graphs allows us to understand how visuals representation emphasize and improve our understanding of different affinities of playing different roles help individual learn differently.
 
 ==========
 
