@@ -46,6 +46,19 @@ Use a programming text editor to edit the example config file
 
 To edit this way, you will need to understand how to you `vi` and how to change the mode to edit.  We will need to be changing the email and username along with the correct [bConnected key](https://kb.berkeley.edu/campus-shared-services/page.php?id=27226).
 
+**Preliminary Setup**
+Ensure that your `~/stat157.cfg` file is setup as specified above. Then, to import the appropriate libraries used in the analysis, run this command:
+
+    sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+    
+The environment setups used in this course will normally also need a change of an environment variable to display graphs properly, as done through this command:
+
+    export DISPLAY=localhost:0
+
+Navigate through your VM to find the directory containing this repository (homework-02). Launch iPython through this special command:
+
+    ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline
+
 **Curation**	SHERRY
 
 **Analysis**
