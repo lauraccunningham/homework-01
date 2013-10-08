@@ -18,7 +18,8 @@ Step-by-step Instructions for Homework-02
 
 **GOAL**
 
-To see if there is a relationship between the VARK Scores and suggested roles as opposed to the projected roles within groups we see ourselves as.  To look at the columns "What type of Learning Style?" and the following four columns, we were able to identify where we are perceived and how we perceive ourselves along the spectrum of group members.
+Using the Statistics 157 Questionnaire data that we will access using the Google API, we will be visualizing a relationship between the data from the responses of our peers.  With the columns "What type of Learning Style?" and the following four columns, we are going to how we work in group settings.  How we are seen and how we see ourselves in groups.  The spectrum varies across Adminstrators, Producers, Entrepreneurs, & Integrators with options of Always, Sometimes, Often , & Not Often in taking on these roles.  Understanding this relationship will emphasize if the VARK Scores are at all accurate to the positioning in groups we take on ourselves.
+Any questions we may have can be found [here](https://github.com/stat157/questionnaire/issues).
 
 **Parameters**
 
@@ -28,7 +29,7 @@ To see if there is a relationship between the VARK Scores and suggested roles as
 
 _Data from the Questionnaire can be found at: http://goo.gl/Cplm9O_
 
-**To Begin**
+**To Begin, Preliminary Setup**
 
 You will need to first open your Virtual Machine.  Log in, and get it running!  From here type in the following commands as we want to make sure you are able to run iPython Notebook, and the necessary functions for claiming data from the Questionnaire data on the Google Document shared to us via our Professor.
 
@@ -46,37 +47,44 @@ Use a programming text editor to edit the example config file
 
 To edit this way, you will need to understand how to you `vi` and how to change the mode to edit.  We will need to be changing the email and username along with the correct [bConnected key](https://kb.berkeley.edu/campus-shared-services/page.php?id=27226).
 
-**Curation**	SHERRY
+**Additional Preliminary Setup**
+
+To acquire all these files, run this command:
+
+    `git clone http://github.com/lauraccunningham/homework-02.git`
+
+Ensure that your `~/stat157.cfg` file is setup as specified above. Then, to import the appropriate libraries used in the analysis, run this command:
+
+    sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+    
+The environment setups used in this course will normally also need a change of an environment variable to display graphs properly, as done through this command:
+
+    export DISPLAY=localhost:0
+
+Navigate through your VM to find the directory containing this repository (**homework-02**). Launch iPython through this special command:
+
+    ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline
+
+In your local OS, open your browser of choice and open your iPython notebook by going to (by default) _127.0.0.1:7777_
+    
+**Curation**
+
+Run all the cells specified in the "Curation" section, producing the curated data. At a top-level view, it is the data of all subjects who submitted well-behaved responses (they gave exactly four proper VARK scores for their learning styles). On a low level view, it is a list of Python dictionaries, each of which has four role ("Administrator", "Entrepreneur", "Integrator", "Producer") corresponding to the person's degree of affinity ("Not Often", "Sometimes", "Often", "Always"). There are also four learning styles ("Visual", "Aural", "Read/Write", "Kinesthetic") corresponding to their VARK scores (positive integers from 0 to 14).
 
 **Analysis**
 
-From the Curator's data, we used `git clone` to transfer our `dataCuration.ipynb` file into our virtual machine.
+Run all the cells specified in the "Analysis" section, producing the analyzed data. At a top-level view, it shows the average learning style affinity score for all subjects who identified with different roles to different degrees. At a low level, it is a three-level dictionary. The top level is a dictionary with role keys and dictionary values. These dictionaries have learning style keys and dictionary values. These dictionaries have affinity degree keys and average learning score as the value.
+ 
+**Visualization**
 
-In opening our virtual machine, we have run the commands `git clone http://github.com/lauraccunningham/homework-02.git`. This copied our GitHub repository over to the virtual machine.
+Run all cells specified in the "Visualization" section (i.e. all remaining cells). The graphs allows you to see how people of different affinities to different roles learn differently.
 
-Now, we need to make sure that when we open our iPython Notebook, we are in the correct directory.  To make sure of this, go through your basic UNIX commands to move around until in the right directory.  In our case, the necessary commands were `ls` to understand where we are in our machines, and `cd homework-02/` to move into the correct folders within our machines.
-
-To open the iPython Notebook, run `ipython notebook --ip=0.0.0.0 --no-browser --pylab=inline` and open _127.0.0.1:7777_ in a browser.  Here you should see within the `homework-02` repository all necessary and up to date files from GitHub.
-Using basic Python syntax, you can continue to parse and examine the data.  We used a basic **for loop** to run through all of the data and determine sums, lengths, and averages of each of the four VARK scores, and prevelance of the student responses.  Building this into a dictionary made it much more consise.
-
-**Visualization**	ASHLEY
-
-**Presentation**	DAVID
+**Presentation**
 
 ==========
 
 [Final Projects & Presentations](https://github.com/stat157/questionnaire/wiki/How-To-Submit-Your-Homework)
 ==========
-
-Objective
-----
-You will use the Stat 157 Questionnaire data that you will access using the Google API. Your primary objective is to visualize data from two columns of the spreadsheet data: 1) the column labeled "What is your learning style?" and 2) any other column of your choosing that you feel helps give us insight into the people in the class.
-
-The data that we have available in the spreadsheet comes from the real world, which means the data is **dirty**. Your job before you visualize the data is to clean it up and transform it into a form that the analyzers and visualizers in your group can use.
-
-Specifically, this is the data that YOU submitted via the Google Form as part of the Questionnaire for this course so we can better understand you, your skills, and where you're headed after you graduate. All identifying data has been redacted from this data!
-
-Any questions regarding the homework can be found [here](https://github.com/stat157/questionnaire/issues).
 
 Hints For Success
 -----------------
