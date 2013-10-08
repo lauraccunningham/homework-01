@@ -18,7 +18,7 @@ Step-by-step Instructions for Homework-02
 
 **GOAL**
 
-Using the Statistics 157 Questionnaire data that we will access using the Google API, we will be visualizing a relationship between the data from the responses of our peers.  With the columns "What type of Learning Style?" and the following four columns, we are going to how we work in group settings.  How we are seen and how we see ourselves in groups.  The spectrum varies across Adminstrators, Producers, Entrepreneurs, & Integrators with options of Always, Sometimes, Often , & Not Often in taking on these roles.  Understanding this relationship will emphasize if the VARK Scores are at all accurate to the positioning in groups we take on ourselves.
+Using the Statistics 157 Questionnaire data that we will access using the Google API, we will be visualizing a relationship between the data from the responses of our peers.  With the columns "What type of Learning Style?" and the following four columns, we are going to how we work in group settings.  How we are seen and how we see ourselves in groups.  The spectrum varies across Administrators, Producers, Entrepreneurs, & Integrators with options of Always, Sometimes, Often, & Not Often in taking on these roles.  Understanding this relationship will emphasize if the VARK Scores are at all accurate to the positioning in groups we take on ourselves.
 Any questions we may have can be found [here](https://github.com/stat157/questionnaire/issues).
 
 **Parameters**
@@ -67,7 +67,7 @@ Navigate through your VM to find the directory containing this repository (**hom
 
 In your local OS, open your browser of choice and open your iPython notebook by going to (by default) _127.0.0.1:7777_
     
-To produce the set of data, we can curate the data by reading the Google Spreadsheet, and presenting all of the subjects who submitted well-behaved responses (they gave exactly four propoer VARK scores for their learning styles).  Within a Python Dictionary, each of our four roles corresponding to  the person's degree of affinity.  With the four learning styles corresponding to their VARK scores (positive integers from 0 to 14), we've understood quantitatively what we are trying to represent.
+To produce the set of data, we can curate the data by reading the Google Spreadsheet, and presenting all of the subjects who submitted well-behaved responses (they gave exactly four proper VARK scores for their learning styles).  Within a Python Dictionary, each of our four roles corresponds to the person's degree of affinity.  With the four learning styles corresponding to their VARK scores (positive integers from 0 to 14), we've understood quantitatively what we are trying to represent.
 
 
 In analyzing the data, we are developing the average learning style affinity scores for all subjects who identified with different roles at varying degrees. Within the three-level dictionary, we are looking at the role keys and dictionary values.  These dictionaries have learning style keys and dictionary values. Each dictionary represents the affinity degree keys and average learning scores are as the value.
