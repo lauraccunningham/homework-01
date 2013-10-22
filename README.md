@@ -13,7 +13,7 @@ _Role -- Name ( [GitHub Account Homepage](https://github.com) )_
   - Entrepreneur -- Ashley SIA ( [ashleysia](https://github.com/ashleysia) )
   - Integrator -- David LAU ( [davidopluslau](https://github.com/davidopluslau) )
 
-Step-by-step Instructions for Homework-02
+Step-by-step Instructions for Homework-01
 -----
 
 **GOAL**
@@ -51,7 +51,7 @@ To edit this way, you will need to understand how to you `vi` and how to change 
 
 To acquire all these files, run this command:
 
-    `git clone http://github.com/lauraccunningham/homework-02.git`
+    `git clone http://github.com/lauraccunningham/homework-01.git`
 
 Ensure that your `~/stat157.cfg` file is setup as specified above. Then, to import the appropriate libraries used in the analysis, run this command:
 
@@ -61,7 +61,7 @@ The environment setups used in this course will normally also need a change of a
 
     export DISPLAY=localhost:0
 
-Navigate through your VM to find the directory containing this repository (**homework-02**). Launch iPython through this special command:
+Navigate through your VM to find the directory containing this repository (**homework-01**). Launch iPython through this special command:
 
     ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline
 
@@ -74,7 +74,7 @@ In analyzing the data, we are developing the average learning style affinity sco
  
 Producing graphs allows us to understand how visuals representation emphasize and improve our understanding of different affinities of playing different roles help individual learn differently.
 
-Our Final Project: [Repository](https://github.com/lauraccunningham/homework-02) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-02/master/data.ipynb)
+Our Final Project: [Repository](https://github.com/lauraccunningham/homework-01) & [Notebook Viewer](http://nbviewer.ipython.org/urls/raw.github.com/lauraccunningham/homework-01/master/data.ipynb)
 
 ==========
 
